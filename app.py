@@ -100,7 +100,7 @@ with st.sidebar:
 # =======================
 st.markdown("""
 <div class="header">
-    <img src="logo/logo.png" />
+    <img src="logo/logo.jpg" />
     <h1>LLM Chat Assistant</h1>
     <p>Fast • Free • Powered by Groq</p>
 </div>
