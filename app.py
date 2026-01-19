@@ -9,18 +9,15 @@ load_dotenv()
 assert os.getenv("GROQ_API_KEY"), "GROQ_API_KEY is missing"
 
 from langchain_groq import ChatGroq
-#from langchain.globals import set_verbose
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-
-#set_verbose(False)
 
 # =======================
 # PAGE CONFIG
 # =======================
 st.set_page_config(
     page_title="LLM Chat App",
-    page_icon="🤖",
+    page_icon="logo/logo.png",   # <-- logo file (no emoji)
     layout="wide"
 )
 
@@ -68,6 +65,11 @@ body {
     margin-bottom: 20px;
 }
 
+.header img {
+    width: 60px;
+    margin-bottom: 8px;
+}
+
 .footer {
     text-align: center;
     color: #9ca3af;
@@ -81,24 +83,26 @@ body {
 # SIDEBAR
 # =======================
 with st.sidebar:
-    st.markdown("## ⚙️ Settings")
+    st.markdown("## Settings")
     st.markdown("**Model:** llama-3.1-8b-instant")
     st.markdown("**Provider:** Groq")
+    st.markdown("**Developer:** Kunal Samnanta")
     st.divider()
 
-    if st.button("🧹 New Chat"):
+    if st.button("New Chat"):
         st.session_state.chat_history = []
         st.rerun()
 
     st.markdown("---")
-    st.markdown("Built with ❤️ using LangChain & Streamlit")
+    st.markdown("Built with Streamlit LangChain and Groq")
 
 # =======================
 # HEADER
 # =======================
 st.markdown("""
 <div class="header">
-    <h1>🤖 LLM Chat Assistant</h1>
+    <img src="logo/logo.png" />
+    <h1>LLM Chat Assistant</h1>
     <p>Fast • Free • Powered by Groq</p>
 </div>
 """, unsafe_allow_html=True)
