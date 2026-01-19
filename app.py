@@ -93,7 +93,7 @@ with st.sidebar:
         st.rerun()
 
     st.markdown("---")
-    st.markdown("Built with Streamlit LangChain and Groq")
+    st.markdown("A fast, production-ready LLM app using Streamlit, LangChain, and Groq")
 
 # =======================
 # HEADER
