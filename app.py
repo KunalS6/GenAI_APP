@@ -86,7 +86,6 @@ with st.sidebar:
     st.markdown("## Settings")
     st.markdown("**Model:** llama-3.1-8b-instant")
     st.markdown("**Provider:** Groq")
-    st.markdown("**Developer:** Kunal Samnanta")
     st.divider()
 
     if st.button("New Chat"):
