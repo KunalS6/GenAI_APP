@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # GenAI_APP
 🤖 My first Generative AI app that demonstrates how to use Large Language Models for question answering using document retrieval and prompts.
 =======
@@ -20,10 +19,3 @@ A modern, production-ready conversational AI application built using:
 ## 🧠 Model
 - `llama-3.1-8b-instant` (Groq)
 
-## 🔧 Setup
-
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/<your-username>/llm-chat-app.git
-cd llm-chat-app
->>>>>>> 6d913de (Initial commit)
