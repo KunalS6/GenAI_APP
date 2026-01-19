@@ -9,11 +9,11 @@ load_dotenv()
 assert os.getenv("GROQ_API_KEY"), "GROQ_API_KEY is missing"
 
 from langchain_groq import ChatGroq
-from langchain.globals import set_verbose
+#from langchain.globals import set_verbose
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-set_verbose(False)
+#set_verbose(False)
 
 # =======================
 # PAGE CONFIG
